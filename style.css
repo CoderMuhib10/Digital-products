@@ -11,10 +11,13 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-position: sticky;
+  position: fixed; /*made the nav bar sticky*/ 
+  top: 0;    /* maybe there you might face some prblm in that case just make top,right,left 0*/
+  right: 0;
+  left: 0;
 }
 ::selection{
-  background-color: orangered;
+  background-color: rgb(255, 25, 0);
 }
 .logo img {
   width: 120px;
@@ -29,6 +32,8 @@ gap: 20px;
   font-size: 18px;
   padding-right: 0px;
   cursor: pointer;
+  text-decoration: none;
+  color: rgb(203, 203, 203);
 }
 .item:hover {
   color: rgb(255, 255, 255);
@@ -36,3 +41,43 @@ gap: 20px;
 }
 /* navigation ends here  */
 
+
+/* banner starts here  */
+.vector {
+  width: 300px;
+}
+.banner {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  background-image: url("images/background.png"),
+    /*this comma is important in case of applying linear gradient*/
+      linear-gradient(45deg, rgb(0, 0, 0), rgb(53, 53, 53));
+}
+.banner-text {
+  color: rgb(255, 255, 255);
+}
+.title {
+  font-size: 55px;
+  font-weight: bold;
+}
+.description {
+  font-size: 18px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.btn{
+    padding: 10px 20px;
+   border-radius: 2px;
+    border: 2px solid rgb(255, 25, 0);
+    background-color: Transparent;
+    cursor:pointer;
+    color: white;
+}
+.btn:hover{
+    background-color: rgb(255, 25, 0)
+}
+/* banner ends here  */
+
+/* about starts here  */
