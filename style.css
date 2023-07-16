@@ -76,8 +76,23 @@ gap: 20px;
     color: white;
 }
 .btn:hover{
-    background-color: rgb(255, 25, 0)
+    background-color: rgb(255, 25, 0);
 }
 /* banner ends here  */
 
 /* about starts here  */
+.main-about{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.title-about{
+  text-align: center;
+
+padding-top: 50px;
+text-decoration: underline wavy rgb(255, 25, 0);
+}
+/* about section ends here  */
+
+/* Service section starts here */
+
